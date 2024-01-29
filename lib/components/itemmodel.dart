@@ -27,7 +27,9 @@ class Item extends StatelessWidget {
           ),
           const Spacer(flex: 1),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                item.playsound();
+              },
               icon: const Icon(
                 Icons.play_arrow,
                 color: Colors.white,
@@ -38,4 +40,3 @@ class Item extends StatelessWidget {
     );
   }
 }
- 
